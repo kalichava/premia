@@ -8,7 +8,7 @@
             
             <span v-if="pair.wbtc.liquidity">
               <strong class="big add4left">{{ pair.wbtc.liquidity }}</strong>
-              <span class="lighter add4left">WBTC</span>
+              <span class="light add4left">WBTC</span>
             </span>
             <span v-else class="add4left" v-html="api.loadingIcon"></span>
 
@@ -18,7 +18,7 @@
               1 WBTC
               <span v-if="pair.wbtc.swapPrice">
                 = {{ pair.wbtc.swapPrice }} WETH
-                <span class="lighter add4left">({{ pair.wbtc.usdPrice }})</span>
+                <span class="light add4left">({{ pair.wbtc.usdPrice }})</span>
               </span>
             </span>
           </div>
@@ -52,7 +52,7 @@
             
             <span v-if="pair.weth.liquidity">
               <strong class="big add4left">{{ pair.weth.liquidity }}</strong>
-              <span class="lighter add4left">WETH</span>
+              <span class="light add4left">WETH</span>
             </span>
             <span v-else class="add4left" v-html="api.loadingIcon"></span>
 
@@ -62,7 +62,7 @@
               1 WETH 
               <span v-if="pair.weth.swapPrice">
                 = {{ pair.weth.swapPrice }} WBTC
-                <span class="lighter add4left">({{ pair.weth.usdPrice }})</span>
+                <span class="light add4left">({{ pair.weth.usdPrice }})</span>
               </span>
             </span>
           </div>
